@@ -463,3 +463,64 @@ padding: .3rem;
     color: var(--light-color);
     font-size: 1.5rem;
 }
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+    gap: 1rem;
+    background:var(--green);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+.footer .box-container .box {
+    padding: 1rem;
+}
+.footer .box-container .box h3 {
+    color: var(--black);
+    font-size: 2rem;
+    padding: .5rem;
+}
+.footer .box-container .box p {
+    color:#fff;
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+.footer .box-container .box .share {
+    margin-top: .5rem;
+}
+.footer .box-container .box .share a {
+    font-size: 2rem;
+    padding: .5rem;
+    background: #fff;
+    color: var(--green);
+    border-radius: 50%;
+    margin: 0 .3rem;
+    width: 2.8rem;
+    margin-top: 1rem;
+    
+}
+.footer .box-container .box a {
+   display: flex;
+   flex-direction: row;
+   padding: 1.5rem;
+   color: #fff;
+   font-size: 1.5rem;
+   
+}
+
+.footer .box-container .box i {
+    /* font-size:1.5rem;  */
+    margin-top: .3rem;
+    margin-right: 1.2rem;
+}
+.footer .box-container .box input {
+    width: 80%;
+    padding: .5rem 1.6rem;
+    border-radius: .5rem;
+    
+}
+.footer .box-container .box img {
+   margin: 2rem 0rem;
+   width: 80%;
+
+}
