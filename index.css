@@ -297,7 +297,7 @@ section {
         font-size: 2rem;
     }
 }
-.feature, .product .product-slide, .categaries .product-slide, .blogs  {
+.feature, .product .product-slide, .categaries .product-slide, .blogs ,.footer  {
    
     margin-left: 5%;
     margin-right: 5%;
