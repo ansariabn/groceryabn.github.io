@@ -11,7 +11,7 @@
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="index.css">
-        
+
     </head>
     <body>
         <header class="main-header">
@@ -32,7 +32,8 @@
             <div class="icon">
                 <div class="fa fa-bars" id="menu-btn"></div>
                 <div class="fa fa-search" id="search-btn"></div>
-                <div class="fa fa-shopping-cart" id="cart-btn"></div>
+
+                <div class="fa fa-shopping-cart cart-1" id="cart-btn"><span>0</span></div>
                 <div class="fa fa-user" id="login-btn"></div>
             </div>
             <form action="" class="search-form">
@@ -52,9 +53,21 @@
                 <input type="password" class="box" name="" id=""
                     placeholder="enter your password" required>
                 <p>forget your password <a href="">click here</a></p>
-                <p>Don't have a account <a href="">create Now</a></p>
+                <p>Don't have a account <a \index.htmlhref="">create Now</a></p>
                 <input type="submit" value="login now" class="btn">
             </form>
+            <div class="product-container">
+                <div class="product-header">
+                    <h5 class="product-cancel">cancel</h5>
+                    <h5 class="product-title">Product</h5>
+                    <h5 class="price1">price</h5>
+                    <h5 class="quantity">Quantity</h5>
+                    <h5 class="total">Total</h5>
+                </div>
+                <div class="products">
+
+                </div>
+            </div>
         </header>
 
         <section class="home " id="home">
@@ -105,21 +118,22 @@
 
                         <img src="image/product-1.png" alt="">
                         <h3>orange</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"> <span>&#8377</span>60<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
+
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                     <div class="swiper-slide box">
 
                         <img src="image/product-2.png" alt="">
                         <h3>onion</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>50<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -127,13 +141,13 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                     <div class="swiper-slide box">
 
                         <img src="image/product-3.png" alt="">
                         <h3>Meat</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>140<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -141,13 +155,13 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                     <div class="swiper-slide box">
 
                         <img src="image/product-4.png" alt="">
                         <h3>cabbage</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>40<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -155,13 +169,13 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                     <div class="swiper-slide box">
 
                         <img src="image/product-5.png" alt="">
                         <h3>Aloo</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>50<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -169,7 +183,7 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
 
                 </div>
@@ -185,7 +199,7 @@
 
                         <img src="image/product-6.png" alt="">
                         <h3>fresh organic</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>60<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -193,12 +207,12 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                     <div class="swiper-slide box">
                         <img src="image/product-7.png" alt="">
                         <h3>carrot</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>80<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -206,12 +220,12 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                     <div class="swiper-slide box">
                         <img src="image/product-8.png" alt="">
                         <h3>lemon</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>60<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -219,12 +233,12 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                     <div class="swiper-slide box">
                         <img src="image/product-9.jpg" alt="">
                         <h3>almond</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>660<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -232,12 +246,12 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                     <div class="swiper-slide box">
                         <img src="image/product-10.png" alt="">
                         <h3>pomegranate</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>70<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -245,7 +259,7 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                 </div>
             </div>
@@ -260,7 +274,7 @@
 
                         <img src="image/product-11.png" alt="">
                         <h3>grapes</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>90<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -268,12 +282,12 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                     <div class="swiper-slide box">
                         <img src="image/product-12.jpg" alt="">
                         <h3>white Apple</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>240<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -281,12 +295,12 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                     <div class="swiper-slide box">
                         <img src="image/ginger-17.png" alt="">
                         <h3>ginger</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>85<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -294,12 +308,12 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                     <div class="swiper-slide box">
                         <img src="image/garlic-16.jpg" alt="">
                         <h3>garlic</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>155<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -307,12 +321,12 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                     <div class="swiper-slide box">
                         <img src="image/product-19.jpg" alt="">
                         <h3>bitter melon</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>150<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -320,7 +334,7 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                 </div>
             </div>
@@ -335,7 +349,7 @@
 
                         <img src="image/product-20.jpg" alt="">
                         <h3>mango</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>45<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -343,12 +357,12 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                     <div class="swiper-slide box">
                         <img src="image/product-21.png" alt="">
                         <h3>onion</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>80<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -356,12 +370,12 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                     <div class="swiper-slide box">
                         <img src="image/product-22.jpg" alt="">
                         <h3>papaya</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>35<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -369,12 +383,12 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                     <div class="swiper-slide box">
                         <img src="image/product-23.jpg" alt="">
                         <h3>palak</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>20<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -382,12 +396,12 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                     <div class="swiper-slide box">
                         <img src="image/product-24.jpg" alt="">
                         <h3>yellow watermelon</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>60<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -395,7 +409,7 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                 </div>
             </div>
@@ -410,7 +424,7 @@
 
                         <img src="image/cat-1.png" alt="">
                         <h3>desi Vegetable</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>50<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -418,12 +432,12 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                     <div class="swiper-slide box">
                         <img src="image/cat-2.png" alt="">
                         <h3>vegetable</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>45<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -431,12 +445,12 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                     <div class="swiper-slide box">
                         <img src="image/cat-3.png" alt="">
                         <h3>milk</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>70<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -444,12 +458,12 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                     <div class="swiper-slide box">
                         <img src="image/cat-4.png" alt="">
-                        <h3>meat</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <h3>Mutton</h3>
+                        <div class="price"><span>&#8377</span>170<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -457,12 +471,12 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                     <div class="swiper-slide box">
                         <img src="image/product-9.jpg" alt="">
                         <h3>Dry fruit</h3>
-                        <div class="price"> $12.99/- - $15.99</div>
+                        <div class="price"><span>&#8377</span>240<span>/KG</span></div>
                         <div class="star">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -470,7 +484,7 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star-half"></i>
                         </div>
-                        <a href="" class="btn"> add to cart</a>
+                        <a href="" class="btn cart"> add to cart</a>
                     </div>
                 </div>
             </div>
@@ -563,7 +577,8 @@
                     <div class="content">
                         <div class="icons1">
                             <a href=""><i class="fa fa-user"></i> by user</a>
-                            <a href=""><i class="fa fa-calendar" ></i> 5st feb, 2023</a>
+                            <a href=""><i class="fa fa-calendar"></i> 5st feb,
+                                2023</a>
                         </div>
 
                         <hr>
@@ -580,7 +595,8 @@
                     <div class="content">
                         <div class="icons1">
                             <a href=""><i class="fa fa-user"></i> by user</a>
-                            <a href=""><i class="fa fa-calendar" ></i> 5st feb, 2023</a>
+                            <a href=""><i class="fa fa-calendar"></i> 5st feb,
+                                2023</a>
                         </div>
                         <hr>
                         <h3> fresh and organic vegetable fruit</h3>
@@ -597,7 +613,8 @@
                     <div class="content">
                         <div class="icons1">
                             <a href=""><i class="fa fa-user"></i> by user</a>
-                            <a href=""><i class="fa fa-calendar" ></i> 5st feb, 2023</a>
+                            <a href=""><i class="fa fa-calendar"></i> 5st feb,
+                                2023</a>
                         </div>
                         <hr>
                         <h3> fresh and organic vegetable fruit</h3>
@@ -608,14 +625,20 @@
                         <a href="" class="btn">read more</a>
                     </div>
                 </div>
+
+
+
+
             </div>
         </section>
-          <footer>
+
+        <footer>
             <section class="footer">
                 <div class="box-container">
                     <div class="box">
                         <h3>groco <i class="fa fa-shopping-basket"></i></h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, ab?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. At, ab?</p>
                         <div class="share">
                             <a href="#" class="fa fa-facebook-f"></a>
                             <a href="#" class="fa fa-twitter"></a>
@@ -629,28 +652,41 @@
                         <a href="" class="links"><i class="fa fa-phone"></i>+123-456-7894</a>
                         <a href="" class="links"><i class="fa fa-phone"></i>+111-222-3333</a>
                         <a href="" class="links"><i class="fa fa-envelope"></i>ansariabn@gmail.com</a>
-                        <a href="" class="links"><i class="fa fa-map-marker"></i>bhiwandi, india</a>
+                        <a href="" class="links"><i class="fa fa-map-marker"></i>bhiwandi,
+                            india</a>
                     </div>
                     <div class="box">
                         <h3>quick links</h3>
-                        <a href="#home" class="links"><i class="fa fa-arrow-right"></i>home</a>
-                        <a href="#feature" class="links"><i class="fa fa-arrow-right"></i>feature</a>
-                        <a href="#product" class="links"><i class="fa fa-arrow-right"></i>product</a>
-                        <a href="#categories" class="links"><i class="fa fa-arrow-right"></i>categories</a>
-                        <a href="#review" class="links"><i class="fa fa-arrow-right"></i>review</a>
-                        <a href="#blogs" class="links"><i class="fa fa-arrow-right"></i>blogs</a>
+                        <a href="#home" class="links"><i class="fa
+                                fa-arrow-right"></i>home</a>
+                        <a href="#feature" class="links"><i class="fa
+                                fa-arrow-right"></i>feature</a>
+                        <a href="#product" class="links"><i class="fa
+                                fa-arrow-right"></i>product</a>
+                        <a href="#categories" class="links"><i class="fa
+                                fa-arrow-right"></i>categories</a>
+                        <a href="#review" class="links"><i class="fa
+                                fa-arrow-right"></i>review</a>
+                        <a href="#blogs" class="links"><i class="fa
+                                fa-arrow-right"></i>blogs</a>
                     </div>
                     <div class="box">
                         <h3>newsletter</h3>
-                       <p>subscribe for latest update</p>
-                       <input type="email" name="" id="" placeholder="your email">
-                       <input type="submit" value="subscribe" class="btn">
-                       <img src="image/payment.png" alt="" class="payment-image">
+                        <p>subscribe for latest update</p>
+                        <input type="email" name="" id="" placeholder="your email">
+                        <input type="submit" value="subscribe" class="btn">
+                        <img src="image/payment.png" alt=""
+                            class="payment-image">
                     </div>
                 </div>
             </section>
         </footer>
-    
+
+
+
+
+
+
         <script
             src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="index.js"></script>
