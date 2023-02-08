@@ -304,6 +304,10 @@ section {
     height: 1.8rem;
     line-height: 1.5;
     border-radius: 50%;
+    cursor: pointer;
+}
+.fa-chevron-circle-left, .fa-chevron-circle-right{
+    cursor: pointer;
 }
 .home {
     display: flex;
