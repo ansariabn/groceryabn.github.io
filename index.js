@@ -34,7 +34,7 @@ login.addEventListener("click", () => {
     document.querySelector(".product-container").classList.remove("bar")
 })
 
-window.onscroll = () => {
+window.scroll = () => {
     document.querySelector(".navbar").classList.remove("show-menu");
     document.querySelector(".search-form").classList.remove("show-search")
     document.querySelector(".login-form").classList.remove("active");
@@ -74,145 +74,145 @@ let products = [
     
     {
         name: "onion",
-        Imagetag: "image/product-2.png",
+        ImageTag: "image/product-2.png",
         price: 50,
         inCart: 0
     },
     {
         name: "Meat",
-        Imagetag: "image/product-3.png",
+        ImageTag: "image/product-3.png",
         price: 140,
         inCart: 0
     },
     {
         name: "cabbage",
-        Imagetag: "image/product-4.png",
+        ImageTag: "image/product-4.png",
         price: 40,
         inCart: 0
     },
     {
         name: "Aloo",
-        Imagetag: "image/product-5.png",
+        ImageTag: "image/product-5.png",
         price: 50,
         inCart: 0
     },
     {
         name: "fresh organic",
-        Imagetag: "image/product-6.png",
+        ImageTag: "image/product-6.png",
         price: 60,
         inCart: 0
     },
     {
         name: "carrot",
-        Imagetag: "image/product-7.png",
+        ImageTag: "image/product-7.png",
         price: 80,
         inCart: 0
     },
     {
         name: "lemon",
-        Imagetag: "image/product-8.png",
+        ImageTag: "image/product-8.png",
         price: 60,
         inCart: 0
     },
     {
         name: "almond",
-        Imagetag: "image/product-9.jpg",
+       ImageTag: "image/product-9.jpg",
         price: 660,
         inCart: 0
     },
     {
         name: "pomegranate",
-        Imagetag: "image/product-10.jpg",
+        ImageTag: "image/product-10.jpg",
         price: 70,
         inCart: 0
     },
     {
         name: "grapes",
-        Imagetag: "image/product-11.png",
+        ImageTag: "image/product-11.png",
         price: 90,
         inCart: 0
     },
     {
         name: "white Apple",
-        Imagetag: "image/product-12.png",
+        ImageTag: "image/product-12.png",
         price: 240,
         inCart: 0
     },
     {
         name: "ginger",
-        Imagetag: "image/ginger-17.png",
+       ImageTag: "image/ginger-17.png",
         price: 85,
         inCart: 0
     },
     {
         name: "garlic",
-        Imagetag: "image/ginger-17.png",
+        ImageTag: "image/ginger-17.png",
         price: 155,
         inCart: 0
     },
     {
         name: "bitter melon",
-        Imagetag: "image/garlic-16.jpg",
+        ImageTag: "image/garlic-16.jpg",
         price: 150,
         inCart: 0
     },
     {
         name: "mango",
-        Imagetag: "image/product-19.jpg",
+        ImageTag: "image/product-19.jpg",
         price: 45,
         inCart: 0
     },
     {
         name: "onion",
-        Imagetag: "image/product-20.jpg",
+        ImageTag: "image/product-20.jpg",
         price: 80,
         inCart: 0
     },
     {
         name: "papaya",
-        Imagetag: "image/product-21.png",
+        ImageTag: "image/product-21.png",
         price: 35,
         inCart: 0
     },
     {
         name: "palak",
-        Imagetag: "image/product-23.jpg",
+        ImageTag: "image/product-23.jpg",
         price: 20,
         inCart: 0
     },
     {
         name: "yellow watermelon",
-        Imagetag: "image/product-24.jpg",
+       ImageTag: "image/product-24.jpg",
         price: 60,
         inCart: 0
     },
     {
         name: "Desi vegetable",
-        Imagetag: "image/cat-1.png",
+        ImageTag: "image/cat-1.png",
         price: 50,
         inCart: 0
     },
     {
         name: "vegetable",
-        Imagetag: "image/cat-2.png",
+        ImageTag: "image/cat-2.png",
         price: 45,
         inCart: 0
     },
     {
         name: "milk",
-        Imagetag: "image/cat-3.png",
+        ImageTag: "image/cat-3.png",
         price: 70,
         inCart: 0
     },
     {
         name: "Mutton",
-        Imagetag: "image/cat-4.png",
+        ImageTag: "image/cat-4.png",
         price: 170,
         inCart: 0
     },
     {
         name: "Dry fruit",
-        Imagetag: "image/product-9.jpg",
+        ImageTag: "image/product-9.jpg",
         price: 240,
         inCart: 0
     },
@@ -253,7 +253,7 @@ function cartNumber(product) {
         document.querySelector(".cart-1 span").textContent = 1;
     }
     setItem(product);
-};
+}
 
 function totalCost(product) {
     // console.log("product price", product.price)
@@ -268,51 +268,49 @@ function totalCost(product) {
     else {
         localStorage.setItem("totalCost", product.price);
     }
-
-
-
-
+   
 
 }
 
 function setItem(product) {
     let cartItems = localStorage.getItem("ProductInCart");
     cartItems = JSON.parse(cartItems);
-
+    console.log("cart item",cartItems)
     if (cartItems != null) {
         
-        if (cartItems[product.tag] == undefined) {
+        if (cartItems[product.ImageTag] == undefined) {
             cartItems = {
                 ...cartItems,
-                [product.tag]: product
+                [product.ImageTag]: product
             }
         }
-        cartItems[product.tag].inCart = 1;
+        cartItems[product.ImageTag].inCart += 1;
     }
     else {
-        product.inCart += 1;
+        product.inCart = 1;
         cartItems = {
-            [product.tag]: product
+            [product.ImageTag]: product
         }
     }
     localStorage.setItem("productInCart", JSON.stringify(cartItems));
 }
 
+
 function displayCart() {
     let cartItems = localStorage.getItem("productInCart");
     let cartCost = localStorage.getItem("totalCost");
     cartItems = JSON.parse(cartItems);
-    let productContai = document.querySelector(".products")
-    console.log(cartItems)
-    if (cartItems && productContai) {
-        productContai.innerHTML = '';
+    let productContain = document.querySelector(".products")
+    
+    if (cartItems && productContain) {
+        productContain.innerHTML = '';
         Object.values(cartItems).map(item => {
-            productContai.innerHTML += `
+            productContain.innerHTML += `
             
             <div class="product">  
                <span><i class="fa fa-times"></i></span>
                <span>${item.name}</span>
-               <img src="${item.Imagetag}">
+               <img src="${item.ImageTag}">
                <div class="price2">
                ₹${item.price}
                </div>
@@ -328,12 +326,12 @@ function displayCart() {
            <hr>
            `
         });
-        productContai.innerHTML += `
+        productContain.innerHTML += `
         <div class="totalPrice">
         <h4 class="totalTitle"> Total </h4>
         <h4 class="totalCost"> ₹${cartCost} </h4>
         </div>`
-        productContai.innerHTML += `
+        productContain.innerHTML += `
         <div class="order">
         <a href="" class="btn">order now</a>
         </div>`
