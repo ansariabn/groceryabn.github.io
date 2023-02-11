@@ -1,4 +1,36 @@
 
+"use strict";
+
+/*---------------------------start- background-color c---------------------------------- */
+const body = document.querySelector(".body");
+const button = document.querySelector("#change-color");
+function toggleDark() {
+    button.classList.toggle("fa-moon-o");
+    body.classList.toggle("dark-mode")
+    if (!body.classList.contains("dark-mode")) {
+        return localStorage.setItem("theme", "light");
+    }
+    localStorage.setItem("theme", "dark-mode");
+   
+    if (!button.classList.contains("fa-moon-o")){
+        return localStorage.setItem("icons", "fa-sun-o");
+    }
+    localStorage.setItem("icons", "fa-sun-o");
+}
+let mode = localStorage.getItem("theme")
+    if (mode && mode === "dark-mode") {
+        body.classList.add("dark-mode");
+    }
+let icons = localStorage.getItem("icons");
+    if (icons && icons === "fa-moon-o"){
+        button.classList.add("fa-moon-o")
+    }
+
+document.querySelector('#change-color').addEventListener('click', toggleDark);
+/*--------------------------------end------------------------------------*/
+
+
+/*------------------------------start-------------------------------- */
 let search = document.getElementById("search-btn");
 
 search.addEventListener("click", () => {
@@ -46,12 +78,13 @@ window.scroll = () => {
     }
 
 }
+/*----------------------------------end---------------------------- */
 let li = document.querySelectorAll(".links");
 let sec = document.querySelectorAll(".product-1");
 
 function activeMenu() {
     let len = sec.length;
-    while (--len && window.scrollY + 650 < sec[len].offsetTop) { }
+    while (--len && window.scrollY + 600 < sec[len].offsetTop) { }
     li.forEach(Itx => Itx.classList.remove("active1"));
     li[len].classList.add("active1");
 
@@ -63,15 +96,15 @@ window.addEventListener("scroll", activeMenu);
 
 // ----------add-to-cart----
 let products = [
-   
-    
+
+
     {
         name: "orange",
         ImageTag: "image/product-1.png",
         price: 60,
         inCart: 0
     },
-    
+
     {
         name: "onion",
         ImageTag: "image/product-2.png",
@@ -116,7 +149,7 @@ let products = [
     },
     {
         name: "almond",
-       ImageTag: "image/product-9.jpg",
+        ImageTag: "image/product-9.jpg",
         price: 660,
         inCart: 0
     },
@@ -140,7 +173,7 @@ let products = [
     },
     {
         name: "ginger",
-       ImageTag: "image/ginger-17.png",
+        ImageTag: "image/ginger-17.png",
         price: 85,
         inCart: 0
     },
@@ -182,7 +215,7 @@ let products = [
     },
     {
         name: "yellow watermelon",
-       ImageTag: "image/product-24.jpg",
+        ImageTag: "image/product-24.jpg",
         price: 60,
         inCart: 0
     },
@@ -241,7 +274,7 @@ function onLoadCart() {
 function cartNumber(product) {
     console.log(product)
     let productNumber = localStorage.getItem("cartNumber");
-    productNumber = parseInt(productNumber); 
+    productNumber = parseInt(productNumber);
 
     if (productNumber) {
 
@@ -256,7 +289,7 @@ function cartNumber(product) {
 }
 
 function totalCost(product) {
-    // console.log("product price", product.price)
+   
 
     let cartCost = localStorage.getItem("totalCost");
 
@@ -268,22 +301,28 @@ function totalCost(product) {
     else {
         localStorage.setItem("totalCost", product.price);
     }
-   
+
 
 }
 
 function setItem(product) {
-    let cartItems = localStorage.getItem("ProductInCart");
+    let cartItems = localStorage.getItem("productInCart");
+    
     cartItems = JSON.parse(cartItems);
-    console.log("cart item",cartItems)
+    
     if (cartItems != null) {
-        
+
         if (cartItems[product.ImageTag] == undefined) {
+            
             cartItems = {
+
                 ...cartItems,
                 [product.ImageTag]: product
             }
+            
         }
+      
+       
         cartItems[product.ImageTag].inCart += 1;
     }
     else {
@@ -301,7 +340,7 @@ function displayCart() {
     let cartCost = localStorage.getItem("totalCost");
     cartItems = JSON.parse(cartItems);
     let productContain = document.querySelector(".products")
-    
+
     if (cartItems && productContain) {
         productContain.innerHTML = '';
         Object.values(cartItems).map(item => {
@@ -335,10 +374,11 @@ function displayCart() {
         <div class="order">
         <a href="" class="btn">order now</a>
         </div>`
-        console.log("running")
+        
     }
     console.log(cartItems)
 }
 onLoadCart();
 
 displayCart();
+
