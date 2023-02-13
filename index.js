@@ -15,7 +15,7 @@ function toggleDark() {
     if (!button.classList.contains("fa-moon-o")){
         return localStorage.setItem("icons", "fa-sun-o");
     }
-    localStorage.setItem("icons", "fa-sun-o");
+    localStorage.setItem("icons", "fa-moon-o");
 }
 let mode = localStorage.getItem("theme")
     if (mode && mode === "dark-mode") {
