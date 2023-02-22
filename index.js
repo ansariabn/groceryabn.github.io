@@ -372,7 +372,7 @@ function displayCart() {
         </div>`
         productContain.innerHTML += `
         <div class="order">
-        <a href="" class="btn">order now</a>
+        <a href="" class="btn" id=order-now>order now</a>
         </div>`
         
     }
@@ -381,4 +381,16 @@ function displayCart() {
 onLoadCart();
 
 displayCart();
+let shop = document.querySelector("#order-now");
+shop.addEventListener("click", () => {
+    var a = confirm("complete your order")
+    if (a == true) {
+        alert("your order is done!....")
 
+        localStorage.clear()
+    }
+    else {
+        alert("your order is cancel...")
+    }
+
+});
