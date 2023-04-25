@@ -383,9 +383,9 @@ function displayCart() {
                ₹${price}
                </div>
                 <div class="quantity1">
-                 <i  class="fa fa-minus" onclick="decrement(${id})"></i>
+                 
                    <span id= ${id}>${inCart}</span>
-                 <i class="fa fa-plus" onclick="increament(${id})"></i>
+                 
                </div>
                <div class="total">
                ₹${inCart * price}
