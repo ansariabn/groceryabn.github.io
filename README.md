@@ -3,6 +3,8 @@
 
 
 ## Feature
+- Light/ Darkmode
+- Full Screen
 <b>Purchase Features</b>
 
 | Feature  |  Coded?       | Description  |
@@ -13,3 +15,7 @@
 | Add Item | &#10004; | Ability of add a new Item on the Cart |
 | Remove a Item | &#10004; | Ability of Remove a Item from the Cart |
 | Checkout | &#10004; | Ability to Checkout |
+
+## Color
+
+- green color of Button
